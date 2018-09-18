@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="pack" value =""/>Nhập mã gói cước (Hòa mạng = 1, Thuê hàng tháng = 2, Nội mạng = 3)
+<br>
+<button onclick=myFunction()>OK</button>
+<p id="result"></p>
+<script>
+    console.log(document.getElementById("pack").value);
+    function myFunction(){
+        let name = document.getElementById("pack").value;
+        if (name == 1){
+            x = "Giá tiền là 60000 đồng/thuê bao";
+        }
+        else if (name == 2){
+            x = "Giá tiền là 49000 đồng/thuê bao";
+        }
+        else if (name == 3){
+            x = "Giá tiền là 440 đồng/phút";
+        }
+        else {
+            x = "Nhập sai mã gói cước";
+        }
+        document.getElementById("result").innerHTML = x;
+    }
+</script>
+</body>
+</html>
